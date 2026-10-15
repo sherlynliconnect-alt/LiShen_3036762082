@@ -10,22 +10,24 @@ effects of New Jersey's minimum wage increase on the fast-food industry.
 
 ## Project Structure
 ECO6067_Project/
+├── README.md
+├── report.pdf
+├── AI_USE_DISCLOSURE.md
+├── requirements.txt
 ├── data/
-│   └── raw/ #raw data
-│   └── processed/ #cleaned analysis data
-├── code/ # Analysis code
+│   ├── raw/                 # Raw data (not committed)
+│   └── processed/           # Cleaned analysis data
+├── code/
 │   ├── run_all.py
 │   ├── 01_clean_data.py
 │   ├── 02_replicate_tables.py
-│   └── 03_replicate_figure.py
+│   ├── 03_replicate_figure.py
 │   └── 04_extension_chain.py
-├── outputs/ # Output results
+├── outputs/
 │   ├── tables/
 │   └── figures/
-├── requirements.txt # Dependencies
-└── README.md
-├── report.pdf
-└── AI_USE_DISCLOSURE.md
+└── skills/
+    └── SKILL.md
 
 ## How to Reproduce
 1. Install dependencies: `pip install -r requirements.txt`
