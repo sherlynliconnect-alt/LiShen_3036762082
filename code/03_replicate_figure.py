@@ -1,8 +1,8 @@
 """
 03_replicate_figure.py
 Replicate Figure 1 from Card & Krueger (1994).
-Input:  output/cleaned_data.csv
-Output: output/figures/figure1.png
+Input:  data/processed/cleaned_data.csv
+Output: outputs/figures/figure1.png
 """
 
 import pandas as pd
@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 import os
 
 # ---------- Paths ----------
-INPUT_PATH = "output/cleaned_data.csv"
-OUTPUT_DIR = "output/figures"
+INPUT_PATH = "data/processed/cleaned_data.csv"
+OUTPUT_DIR = "outputs/figures"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 df = pd.read_csv(INPUT_PATH)

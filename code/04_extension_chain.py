@@ -7,9 +7,9 @@ Research question:
     Did the employment effect of New Jersey's minimum wage increase
     differ across fast-food chains (Burger King, KFC, Roy Rogers, Wendy's)?
 
-Input:  output/cleaned_data.csv
-Output: output/tables/extension_chain.csv
-        output/figures/extension_chain.png
+Input:  data/processed/cleaned_data.csv
+Output: outputs/tables/extension_chain.csv
+        outputs/figures/extension_chain.png
 """
 
 import pandas as pd
@@ -19,9 +19,9 @@ import matplotlib.pyplot as plt
 import os
 
 # ---------- Paths ----------
-INPUT_PATH = "output/cleaned_data.csv"
-TABLE_DIR = "output/tables"
-FIGURE_DIR = "output/figures"
+INPUT_PATH = "data/processed/cleaned_data.csv"
+TABLE_DIR = "outputs/tables"
+FIGURE_DIR = "outputs/figures"
 os.makedirs(TABLE_DIR, exist_ok=True)
 os.makedirs(FIGURE_DIR, exist_ok=True)
 

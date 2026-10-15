@@ -5,31 +5,33 @@ This project replicates Card & Krueger (1994), which studies the employment
 effects of New Jersey's minimum wage increase on the fast-food industry.
 
 ## Data Source
-- Raw data: `01_DID/public.csv` (publicly available from Princeton University)
+- Raw data: `data/raw/public.csv` (publicly available from Princeton University)
 - Data dictionary: see `01_DID/DATA_DICTIONARY.md`
 
 ## Project Structure
 ECO6067_Project/
-├── 01_DID/
-│   └── public.csv # Raw data
+├── data/
+│   └── raw/ #raw data
+│   └── processed/ #cleaned analysis data
 ├── code/ # Analysis code
+│   ├── run_all.py
 │   ├── 01_clean_data.py
 │   ├── 02_replicate_tables.py
 │   └── 03_replicate_figure.py
-├── output/ # Output results
+│   └── 04_extension_chain.py
+├── outputs/ # Output results
 │   ├── tables/
 │   └── figures/
 ├── requirements.txt # Dependencies
 └── README.md
+├── report.pdf
+└── AI_USE_DISCLOSURE.md
 
 ## How to Reproduce
 1. Install dependencies: `pip install -r requirements.txt`
-2. Make sure `01_DID/public.csv` is in place
-3. Run the scripts in order:
-   - `python code/01_clean_data.py`
-   - `python code/02_replicate_tables.py`
-   - `python code/03_replicate_figure.py`
-4. Results will be saved to the `output/` folder
+2. Place `public.csv` in `data/raw/`.
+3. Run: `python code/run_all.py`
+4. All tables and figures will be saved to `outputs/`.
 
 ## Main Results
 - Table 2: Average FTE employment by group and wave
@@ -38,7 +40,6 @@ ECO6067_Project/
 - Figure 1: Employment changes in NJ vs PA
 
 ## Independent Extension
-(To be filled in)## Independent Extension
 
 ### Research Question
 Did the employment effect of New Jersey's minimum wage increase differ
@@ -90,10 +91,9 @@ This reinforces Card & Krueger's main conclusion while adding a chain-level
 dimension that the original paper does not explore.
 
 ### Output Files
-- `output/tables/extension_chain.csv`
-- `output/figures/extension_chain.png`
+- `outputs/tables/extension_chain.csv`
+- `outputs/figures/extension_chain.png`
 
-## AI-Use Disclosure
 ## AI-Use Disclosure
 
 ### Where and how AI was used

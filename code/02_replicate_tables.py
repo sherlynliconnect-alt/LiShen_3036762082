@@ -1,8 +1,8 @@
 """
 02_replicate_tables.py
 Replicate Tables 2-4 from Card & Krueger (1994).
-Input:  output/cleaned_data.csv
-Output: output/tables/table2.csv, table3.csv, table4.csv
+Input:  data/processed/cleaned_data.csv
+Output: outputs/tables/table2.csv, table3.csv, table4.csv
 """
 
 import pandas as pd
@@ -11,8 +11,8 @@ import statsmodels.formula.api as smf
 import os
 
 # ---------- Paths ----------
-INPUT_PATH = "output/cleaned_data.csv"
-OUTPUT_DIR = "output/tables"
+INPUT_PATH = "data/processed/cleaned_data.csv"
+OUTPUT_DIR = "outputs/tables"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 df = pd.read_csv(INPUT_PATH)

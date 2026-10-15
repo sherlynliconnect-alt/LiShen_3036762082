@@ -1,5 +1,5 @@
 # Raw data (do not upload restricted data)
-01_DID/*.csv
+data/raw/*.csv
 
 # Python cache
 __pycache__/

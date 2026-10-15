@@ -2,8 +2,8 @@
 01_clean_data.py
 Card & Krueger (1994) Minimum Wage and Employment
 Data cleaning and variable construction.
-Input:  01_DID/public.csv
-Output: output/cleaned_data.csv
+Input:  data/raw/public.csv
+Output: data/processed/cleaned_data.csv
 """
 
 import pandas as pd
@@ -11,7 +11,7 @@ import numpy as np
 import os
 
 # ---------- Path settings ----------
-INPUT_PATH = "01_DID/public.csv"
+INPUT_PATH = "data/raw/public.csv"
 OUTPUT_DIR = "output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
